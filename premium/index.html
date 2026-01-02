@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="FreezeHost - Premium Minecraft &amp; VPS hosting plans. Choose from various high-performance AMD &amp; Intel server options for your needs.">
+
+    <title>FreezeHost - Premium Minecraft Hosting</title>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+
+    <style>
+        /* Ensures consistent box model sizing across browsers (Firefox Fix) */
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Space Grotesk';
+            font-style: normal;
+            font-weight: 300 700;
+            font-display: swap;
+            src: url('/assets/fonts/space-grotesk.woff2') format('woff2');
+        }
+    </style>
+    <style id="critical-css-placeholder"></style>
+
+    <!-- CSS Loading Consistency (Async/Preload) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </noscript>
+    <link rel="preload" href="/master.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="/master.css">
+    </noscript>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- SEO Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [{
+                    "@type": "Organization",
+                    "@id": "https://freezehost.pro/#organization",
+                    "name": "FreezeHost",
+                    "url": "https://freezehost.pro/",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://freezehost.pro/assets/images/fhlogonewnotext.png"
+                    }
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://freezehost.pro/#website",
+                    "url": "https://freezehost.pro/",
+                    "name": "FreezeHost",
+                    "publisher": {
+                        "@id": "https://freezehost.pro/#organization"
+                    }
+                },
+                {
+                    "@type": "WebPage",
+                    "url": "https://freezehost.pro/premium/",
+                    "name": "FreezeHost - Premium Minecraft Hosting",
+                    "description": "FreezeHost - Premium Minecraft &amp; VPS hosting plans. Choose from various high-performance AMD &amp; Intel server options for your needs.",
+                    "isPartOf": {
+                        "@id": "https://freezehost.pro/#website"
+                    },
+                    "inLanguage": "en-US"
+                }
+            ]
+        }
+    </script>
+
+</head>
+
+<body class="text-gray-100" style="font-family: 'Space Grotesk', sans-serif;">
+    <!-- Discord Float Button -->
+    <div class="discord-wrapper">
+        <a href="https://discord.gg/q73WgFKQP3" target="_blank" class="discord-float" aria-label="Join our Discord">
+            <i class="fab fa-discord text-3xl"></i>
+        </a>
+        <div class="discord-widget">
+            <div class="discord-widget-header">
+                <h3>Join Community</h3>
+            </div>
+            <p>Connect with fellow server owners, get instant 24/7 support, and stay updated.</p>
+            <div class="discord-widget-status">
+                <span class="status-dot"></span>
+                <span>Support Online</span>
+            </div>
+            <a href="https://discord.gg/q73WgFKQP3" target="_blank" class="discord-widget-btn">Join Server</a>
+        </div>
+    </div>
+
+
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" style="background-color: #0c0d0f" class="fixed bottom-0 left-0 right-0 border-gray-900 z-50 border-t">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-sm text-center md:text-left text-gray-300">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+                <div class="flex items-center gap-4">
+                    <button onclick="acceptCookies()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 text-sm font-medium">Accept</button>
+                    <a href="/privacy" class="text-blue-400 hover:text-blue-300 text-sm font-medium">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Standard Mobile Menu -->
+    <div class="menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="flex items-center gap-2">
+                <img src="/assets/images/fhlogonewnotext.png" alt="FreezeHost Logo" class="h-7 w-7" loading="lazy" decoding="async" width="28" height="28" />
+                <span class="text-lg font-bold gradient-text">FreezeHost</span>
+            </div>
+            <button class="close-menu w-9 h-9 flex items-center justify-center rounded-lg hover:bg-gray-800 transition-colors" aria-label="Close menu">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <nav class="mobile-menu-content">
+            <div class="space-y-1">
+                <a href="/" class="mobile-menu-link"><i class="fas fa-home text-blue-400"></i><span>Home</span></a>
+                <a href="https://uptime.freezehost.pro/" class="mobile-menu-link"><i class="fas fa-chart-line text-blue-400"></i><span>Uptime</span></a>
+                <a href="/faq" class="mobile-menu-link"><i class="fas fa-question-circle text-blue-400"></i><span>FAQ</span></a>
+            </div>
+            <div class="mt-6">
+                <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">Quick Access</h3>
+                <div class="space-y-1">
+                    <a href="https://free.freezehost.pro" class="mobile-menu-card">
+                        <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-tachometer-alt text-blue-400"></i></div>
+                        <div class="flex-1">
+                            <div class="font-medium text-sm">Free Dashboard</div>
+                            <div class="text-xs text-gray-500">Start for free</div>
+                        </div><i class="fas fa-chevron-right text-gray-600 text-sm"></i>
+                    </a>
+                    <a href="https://panel.freezehost.pro" class="mobile-menu-card">
+                        <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-gamepad text-blue-400"></i></div>
+                        <div class="flex-1">
+                            <div class="font-medium text-sm">Control Panel</div>
+                            <div class="text-xs text-gray-500">Manage servers</div>
+                        </div><i class="fas fa-chevron-right text-gray-600 text-sm"></i>
+                    </a>
+                    <a href="/app" class="mobile-menu-card">
+                        <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-android text-blue-400"></i></div>
+                        <div class="flex-1">
+                            <div class="font-medium text-sm">Mobile App</div>
+                            <div class="text-xs text-gray-500">Earn rewards</div>
+                        </div><i class="fas fa-chevron-right text-gray-600 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="/premium/" class="btn-primary w-full px-6 py-3 rounded-lg font-medium text-center flex items-center justify-center gap-2">
+                <i class="fas fa-crown"></i><span>Upgrade to Premium</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Standard Header -->
+    <!-- <header class="fixed w-full z-40 bg-opacity-90 backdrop-blur-lg promo-header-offset"> -->
+    <header class="fixed w-full z-40 bg-opacity-90 backdrop-blur-lg ">
+        <div class="container mx-auto px-3 md:px-4 py-3 md:py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="flex items-center space-x-2 md:space-x-4">
+                    <img src="/assets/images/fhlogonewnotext.png" alt="FreezeHost Logo" class="h-8 w-8 md:h-10 md:w-10" loading="lazy" decoding="async" width="40" height="40"/>
+                    <span class="text-xl md:text-2xl font-bold gradient-text">FreezeHost</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-4">
+                    <div class="flex items-center space-x-2">
+                        <a href="/" class="nav-link-pill"><i class="fas fa-home"></i><span>Home</span></a>
+                        <a href="https://uptime.freezehost.pro/" class="nav-link-pill"><i class="fas fa-chart-line"></i><span>Uptime</span></a>
+                        <a href="/faq" class="nav-link-pill"><i class="fas fa-question-circle"></i><span>FAQ</span></a>
+                    </div>
+                    <div class="h-6 w-px bg-gray-700"></div>
+                    <div class="relative" id="get-started-dropdown-container">
+                        <button id="get-started-dropdown-button" class="get-started-btn">
+                            <span class="relative z-10">Get Started</span>
+                            <i class="fas fa-chevron-down text-xs transition-all duration-300 group-hover:rotate-180 relative z-10"></i>
+                        </button>
+                        <div id="get-started-dropdown-menu" class="dropdown-menu">
+                            <div class="p-3">
+                                <div class="px-3 py-2 mb-2">
+                                    <h3 class="text-sm font-semibold text-white mb-1">Quick Access</h3>
+                                    <p class="text-xs text-gray-500">Choose your dashboard</p>
+                                </div>
+                                <div class="space-y-1">
+                                    <a href="https://free.freezehost.pro" class="dropdown-item">
+                                        <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 rounded-lg flex items-center justify-center"><i class="fas fa-tachometer-alt text-blue-400"></i></div>
+                                        <div class="flex-1">
+                                            <div class="font-medium text-sm">Free Dashboard</div>
+                                            <div class="text-xs text-gray-500">Start for free</div>
+                                        </div><i class="fas fa-arrow-right text-gray-600 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    </a>
+                                    <a href="https://panel.freezehost.pro" class="dropdown-item">
+                                        <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 rounded-lg flex items-center justify-center"><i class="fas fa-gamepad text-blue-400"></i></div>
+                                        <div class="flex-1">
+                                            <div class="font-medium text-sm">Control Panel</div>
+                                            <div class="text-xs text-gray-500">Manage servers</div>
+                                        </div><i class="fas fa-arrow-right text-gray-600 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    </a>
+                                    <a href="/app" class="dropdown-item">
+                                        <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 rounded-lg flex items-center justify-center"><i class="fab fa-android text-blue-400"></i></div>
+                                        <div class="flex-1">
+                                            <div class="font-medium text-sm">Mobile App</div>
+                                            <div class="text-xs text-gray-500">Earn rewards</div>
+                                        </div><i class="fas fa-arrow-right text-gray-600 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    </a>
+                                </div>
+                                <div class="px-3 py-2 mt-2 border-t border-blue-500/10">
+                                    <a href="https://billing.freezehost.pro" class="btn-primary w-full px-4 py-2.5 rounded-lg text-sm font-medium flex items-center justify-center gap-2"><i class="fas fa-rocket"></i><span>View Premium Plans</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <button class="md:hidden text-white open-menu p-2" aria-label="Open menu">
+                    <div class="hamburger-icon"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <link rel="preload" as="image" href="/assets/images/bg2.png">
+
+
+
+    <meta name="keywords" content="Minecraft hosting, VPS hosting, server plans, Dutch hosting, FreezeHost premium, game servers, virtual private servers">
+    <meta name="author" content="FreezeHost - Premium Server Hosting">
+    <meta property="og:title" content="FreezeHost - Premium Server Hosting">
+    <meta property="og:description" content="Explore our premium Minecraft & VPS hosting plans with high-performance servers across the globe.">
+    <meta property="og:type" content="website">
+    <meta name="google-site-verification" content="oJ0AebhMzA43Yd691Dt0EJbDE-x0Xqoh54eW_VDNprI" />
+
+    <style>
+        @keyframes scale-in {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .animate-scale-in {
+            animation: scale-in 0.3s ease-out;
+        }
+    </style>
+
+    <script async src="https://fundingchoicesmessages.google.com/i/pub-4580579291403697?ers=1"></script>
+    <script>
+        (function() {
+            function signalGooglefcPresent() {
+                if (!window.frames['googlefcPresent']) {
+                    if (document.body) {
+                        const iframe = document.createElement('iframe');
+                        iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';
+                        iframe.style.display = 'none';
+                        iframe.name = 'googlefcPresent';
+                        document.body.appendChild(iframe);
+                    } else {
+                        setTimeout(signalGooglefcPresent, 0);
+                    }
+                }
+            }
+            signalGooglefcPresent();
+        })();
+    </script>
+
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [{
+                    "@type": "Organization",
+                    "@id": "https://freezehost.pro/#organization",
+                    "name": "FreezeHost",
+                    "url": "https://freezehost.pro/",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://freezehost.pro/assets/images/fhlogonewnotext.png"
+                    },
+                    "sameAs": [
+                        "https://discord.gg/q73WgFKQP3",
+                        "https://www.trustpilot.com/review/freezehost.pro"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://freezehost.pro/#website",
+                    "url": "https://freezehost.pro/",
+                    "name": "FreezeHost",
+                    "publisher": {
+                        "@id": "https://freezehost.pro/#organization"
+                    }
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://freezehost.pro/premium/#webpage",
+                    "url": "https://freezehost.pro/premium/",
+                    "name": "Premium Server Hosting Plans - FreezeHost",
+                    "isPartOf": {
+                        "@id": "https://freezehost.pro/#website"
+                    },
+                    "description": "Explore and select the perfect high-performance Minecraft or VPS server hosting plan. All plans feature AMD & Intel processors, DDoS protection, and 24/7 support.",
+                    "breadcrumb": {
+                        "@id": "https://freezehost.pro/premium/#breadcrumb"
+                    },
+                    "mainEntity": {
+                        "@id": "https://freezehost.pro/premium/#service"
+                    }
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://freezehost.pro/premium/#breadcrumb",
+                    "itemListElement": [{
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://freezehost.pro/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Premium Plans"
+                        }
+                    ]
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://freezehost.pro/premium/#service",
+                    "serviceType": "Server Hosting",
+                    "provider": {
+                        "@id": "https://freezehost.pro/#organization"
+                    },
+                    "name": "Premium Server Hosting",
+                    "description": "High-performance Minecraft & VPS server hosting with AMD & Intel processors, DDoS protection, and 24/7 support.",
+                    "areaServed": {
+                        "@type": "Country",
+                        "name": "NL"
+                    },
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.4",
+                        "reviewCount": "125",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                    },
+                    "hasOfferCatalog": {
+                        "@type": "OfferCatalog",
+                        "name": "Netherlands Minecraft Hosting Plans",
+                        "itemListElement": [{
+                                "@type": "Offer",
+                                "price": "1.50",
+                                "priceCurrency": "USD",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "MC-2GB-EU Plan",
+                                    "description": "2GB DDR4 RAM, 1.25 vCore Intel Xeon CPU, 5GB NVMe"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "price": "3.00",
+                                "priceCurrency": "USD",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "MC-4GB-EU Plan",
+                                    "description": "4GB DDR4 RAM, 1.5 vCore Intel Xeon CPU, 10GB NVMe"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "price": "4.50",
+                                "priceCurrency": "USD",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "MC-6GB-EU Plan",
+                                    "description": "6GB DDR4 RAM, 2.5 vCore Intel Xeon CPU, 20GB NVMe"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "price": "6.00",
+                                "priceCurrency": "USD",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "MC-8GB-EU Plan",
+                                    "description": "8GB DDR4 RAM, 3 vCore Intel Xeon CPU, 30GB NVMe"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "price": "9.00",
+                                "priceCurrency": "USD",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "MC-12GB-EU Plan",
+                                    "description": "12GB DDR4 RAM, 3.5 vCore Intel Xeon CPU, 50GB NVMe"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "price": "12.00",
+                                "priceCurrency": "USD",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "MC-16GB-EU Plan",
+                                    "description": "16GB DDR4 RAM, 4 vCore Intel Xeon CPU, 100GB NVMe"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    </script>
+
+
+
+    <section class="min-h-screen flex items-center justify-center pt-20 md:pt-24 pb-12 md:pb-16 relative text-center">
+        <picture class="absolute inset-0 w-full h-full">
+            <source srcset="/assets/images/bg2.png" type="image/webp">
+            <img src="/assets/images/bg2.png" alt="Premium Minecraft Landscape" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high" decoding="async" width="1920" height="1080" />
+        </picture>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50"></div>
+        <div class="relative z-10 px-4 mt-8 md:mt-16">
+            <div class="inline-flex items-center gap-2 bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 px-3 md:px-4 py-2 rounded-full mb-2 text-sm md:text-base text-gray-400 hover:bg-blue-500/15 transition-all duration-200 cursor-default">
+                <i class="fas fa-globe text-blue-400"></i>
+                <span class="font-medium" style="font-family: 'Space Grotesk', sans-serif;">
+                <span class="block md:inline text-center">New Location:</span>
+                <span class="block md:inline text-center"><span class="text-blue-400">Singapore</span> <img src="https://flagcdn.com/w20/sg.png" alt="Singapore Flag" class="w-4 h-3 object-cover rounded-[1px] inline-block"> is now available!</span>
+                </span>
+                <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                </span>
+            </div>
+            <h1 class="hero-text text-5xl md:text-5xl font-bold mb-4 md:mb-6 text-white !pt-0">
+                The Best <span class="gradient-text">Premium Server Hosting</span>
+            </h1>
+            <p class="hero-desc text-lg md:text-xl text-gray-300 mb-6 md:mb-8 max-w-3xl mx-auto">
+                Select the perfect plan for your Minecraft or VPS server hosted in multiple locations across the globe. All plans include 24/7 uptime, DDoS protection, and instant setup, with high-performance <span class="text-blue-400 font-semibold">AMD & Intel processors.</span>
+            </p>
+            <div class="mobile-button-group flex flex-col md:flex-row justify-center gap-4 md:gap-6">
+                <a href="#plans" class="btn-primary px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg font-medium text-center">View
+                Plans</a>
+                <a href="https://billing.freezehost.pro" class="btn-premium px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg font-medium text-center">Open
+                Billing</a>
+            </div>
+
+            <div class="flex justify-center mt-6 md:mt-8">
+                <a href="https://www.trustpilot.com/review/freezehost.pro" target="_blank" class="flex items-center gap-2 bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 px-3 md:px-4 py-2 rounded-full text-xs md:text-sm text-gray-300 hover:bg-blue-500/15 transition-all duration-200 group">
+                    <div class="flex items-center gap-1">
+                        <i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star text-yellow-400"></i><i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                    <div class="flex items-center gap-2"><span class="font-medium text-blue-400">4.4</span><span class="text-gray-400">•</span></div>
+                    <div class="flex items-center gap-1 text-gray-400 group-hover:text-gray-300 transition-colors">
+                        <span>Trustpilot</span><i class="fas fa-external-link-alt text-xs"></i></div>
+                </a>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-3 md:gap-4 mt-6 md:mt-8">
+                <div class="flex items-center gap-2 bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 px-3 md:px-4 py-2 rounded-full text-xs md:text-sm text-gray-300">
+                    <i class="fas fa-clock text-green-400"></i><span class="text-blue-400">24/7</span> Uptime</div>
+                <div class="flex items-center gap-2 bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 px-3 md:px-4 py-2 rounded-full text-xs md:text-sm text-gray-300">
+                    <i class="fas fa-infinity text-blue-400"></i><span>No Renewal</span></div>
+                <div class="flex items-center gap-2 bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 px-3 md:px-4 py-2 rounded-full text-xs md:text-sm text-gray-300">
+                    <i class="fas fa-dollar-sign text-yellow-400"></i><span>Affordable Prices</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" class="py-12 md:py-20">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-3 md:mb-4">Build Your <span class="gradient-text">Perfect Server</span></h2>
+            <p class="text-base md:text-xl text-gray-400 text-center mb-8 md:mb-12">Configure your ideal Minecraft or VPS hosting plan</p>
+
+            <div class="bg-card border border-blue-500/10 rounded-xl p-4 md:p-8">
+                <div class="mb-6">
+                    <h3 class="text-base md:text-lg font-bold mb-3 flex items-center gap-2"><span class="text-blue-400">1.</span> Choose Service</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="selectable-container selected" id="service-mc">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-cube text-2xl text-blue-400"></i>
+                                <div>
+                                    <div class="container-main-text !mb-0">Minecraft</div>
+                                    <div class="container-sub-text">Game Server</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selectable-container" id="service-vps">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-server text-2xl text-blue-400"></i>
+                                <div>
+                                    <div class="container-main-text !mb-0">VPS</div>
+                                    <div class="container-sub-text">Virtual Server</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <h3 class="text-base md:text-lg font-bold mb-3 flex items-center gap-2"><span class="text-blue-400">2.</span> Choose Location</h3>
+                        <div id="location-containers" class="space-y-2"></div>
+                    </div>
+                    <div>
+                        <h3 class="text-base md:text-lg font-bold mb-3 flex items-center gap-2"><span class="text-blue-400">3.</span> Select RAM</h3>
+                        <div id="ram-containers" class="grid grid-cols-2 sm:grid-cols-3 gap-2"></div>
+                    </div>
+                </div>
+
+                <div id="plan-details" class="border-t border-blue-500/10 pt-6" style="display: none;">
+                    <h3 class="text-base md:text-lg font-bold mb-4 flex items-center gap-2"><span class="text-blue-400">4.</span> Your Configuration</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <div class="bg-blue-500/5 border border-blue-500/10 rounded-lg p-4">
+                            <h4 id="plan-name" class="text-xl md:text-2xl font-bold mb-1"></h4>
+                            <p id="plan-recommended" class="text-blue-400 text-xs md:text-sm"></p>
+                        </div>
+                        <div class="bg-blue-500/5 border border-blue-500/10 rounded-lg p-4 flex flex-col justify-center">
+                            <p class="text-gray-400 text-xs md:text-sm mb-1">Monthly Price</p>
+                            <div id="plan-price-button" class="text-2xl md:text-3xl font-bold gradient-text"></div>
+                            <div id="plan-recurring-price" class="text-xs md:text-sm text-gray-500 mt-1"></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+                        <div class="bg-blue-500/5 border border-blue-500/10 rounded-lg p-3">
+                            <div class="flex items-center gap-2 mb-1"><i class="fas fa-microchip text-blue-400 text-sm"></i><span class="text-xs text-gray-500">CPU</span></div>
+                            <p id="plan-cpu" class="text-sm font-medium"></p>
+                        </div>
+                        <div class="bg-blue-500/5 border border-blue-500/10 rounded-lg p-3">
+                            <div class="flex items-center gap-2 mb-1"><i class="fas fa-memory text-blue-400 text-sm"></i><span class="text-xs text-gray-500">RAM</span></div>
+                            <p id="plan-ram" class="text-sm font-medium"></p>
+                        </div>
+                        <div class="bg-blue-500/5 border border-blue-500/10 rounded-lg p-3">
+                            <div class="flex items-center gap-2 mb-1"><i class="fas fa-hdd text-blue-400 text-sm"></i><span class="text-xs text-gray-500">Storage</span></div>
+                            <p id="plan-storage" class="text-sm font-medium"></p>
+                        </div>
+                        <div class="bg-blue-500/5 border border-blue-500/10 rounded-lg p-3">
+                            <div class="flex items-center gap-2 mb-1"><i class="fas fa-map-marker-alt text-blue-400 text-sm"></i><span class="text-xs text-gray-500">Location</span></div>
+                            <p id="plan-location" class="text-sm font-medium"></p>
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <button id="buy-now-btn" class="btn-primary w-full md:w-auto px-6 py-3 md:px-8 md:py-4 rounded-lg text-base md:text-lg font-medium" disabled><i class="fas fa-shopping-cart mr-2"></i>Get Started</button>
+                    </div>
+                </div>
+
+                <div class="text-center py-6" id="selection-prompt">
+                    <p class="text-gray-500 text-sm">Select a location and RAM to view your configuration</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-6 md:mt-8">
+                <div class="bg-card border border-blue-500/10 rounded-lg p-3 md:p-4 text-center"><i class="fas fa-clock text-blue-400 text-xl md:text-2xl mb-2"></i>
+                    <p class="text-xs md:text-sm font-medium">24/7 Uptime</p>
+                </div>
+                <div class="bg-card border border-blue-500/10 rounded-lg p-3 md:p-4 text-center"><i class="fas fa-shield-alt text-blue-400 text-xl md:text-2xl mb-2"></i>
+                    <p class="text-xs md:text-sm font-medium">DDoS Protection</p>
+                </div>
+                <div class="bg-card border border-blue-500/10 rounded-lg p-3 md:p-4 text-center"><i class="fas fa-bolt text-blue-400 text-xl md:text-2xl mb-2"></i>
+                    <p class="text-xs md:text-sm font-medium">Instant Setup</p>
+                </div>
+                <div class="bg-card border border-blue-500/10 rounded-lg p-3 md:p-4 text-center"><i class="fas fa-headset text-blue-400 text-xl md:text-2xl mb-2"></i>
+                    <p class="text-xs md:text-sm font-medium">24/7 Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-4">Our Locations</h2>
+            <p class="text-xl text-gray-400 text-center mb-12">Servers available in multiple locations</p>
+        </div>
+        <div class="full-width-map">
+            <div class="location-map-container">
+                <img src="/assets/images/map.svg" alt="World Map" class="world-map" draggable="false" oncontextmenu="return false;">
+                <div class="location-dot" style="top: 35%; left: 47%;">
+                    <div class="blue-point"></div>
+                    <div class="location-marker">
+                        <img src="https://flagcdn.com/w40/nl.png" alt="Netherlands Flag" class="flag-image">
+                        <span>The Netherlands</span>
+                    </div>
+                </div>
+                <div class="location-dot" style="top: 59%; left: 75%;">
+                    <div class="blue-point"></div>
+                    <div class="location-marker">
+                        <img src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag" class="flag-image">
+                        <span>Singapore</span>
+                    </div>
+                </div>
+                <div class="location-dot" style="top: 36%; left: 49%;">
+                    <div class="blue-point"></div>
+                    <div class="location-marker">
+                        <img src="https://flagcdn.com/w40/de.png" alt="Germany Flag" class="flag-image">
+                        <span>Germany</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .full-width-map {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .location-map-container {
+            position: relative;
+            background-color: #07080a;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+
+        .world-map {
+            width: 100%;
+            height: auto;
+        }
+
+        .continent {
+            fill: #0c0d0f;
+        }
+
+        .location-dot {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            /* Override master.css blue background */
+            width: auto;
+            height: auto;
+            border-radius: 0;
+        }
+
+        .blue-point {
+            width: 14px;
+            height: 14px;
+            background-color: #22c55e;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            box-shadow: 0 0 15px rgba(34, 197, 94, 0.8);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Expanding sonar rings */
+
+        .blue-point::before,
+        .blue-point::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 1.5px solid #22c55e;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: sonar-ripple 2.5s linear infinite;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .blue-point::after {
+            animation-delay: 1.25s;
+        }
+
+        @keyframes sonar-ripple {
+            0% {
+                width: 14px;
+                height: 14px;
+                opacity: 1;
+            }
+            100% {
+                width: 60px;
+                height: 60px;
+                opacity: 0;
+            }
+        }
+
+        .location-marker {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            background-color: #0c0d0f;
+            padding: 6px 10px;
+            border-radius: 6px;
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            color: #22c55e;
+            font-weight: bold;
+            white-space: nowrap;
+            min-width: fit-content;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(25px);
+            z-index: 20;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+
+        .flag-image {
+            width: 20px;
+            height: 15px;
+        }
+
+        .location-marker span {
+            display: inline-block;
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+
+        .location-dot:hover .location-marker {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(15px);
+        }
+
+        .location-dot:hover .blue-point {
+            transform: translate(-50%, -50%) scale(1.3);
+            background-color: #4ade80;
+            box-shadow: 0 0 25px rgba(74, 222, 128, 0.9);
+        }
+
+        .location-dot:hover .blue-point::before,
+        .location-dot:hover .blue-point::after {
+            opacity: 0;
+            animation: none;
+        }
+
+        .blue-point {
+            transition: all 0.3s ease;
+        }
+    </style>
+
+    <section class="section-padding py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-4">Why Choose Our Plans?</h2>
+            <p class="text-xl text-gray-400 text-center mb-12">Premium features included with every hosting plan</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card p-8 rounded-xl">
+                    <div class="w-16 h-16 bg-blue-500/10 rounded-lg flex items-center justify-center mb-6"><i class="fas fa-server text-3xl text-blue-400"></i></div>
+                    <h3 class="text-xl font-semibold mb-4">High Performance</h3>
+                    <p class="text-gray-400">Powered by latest generation AMD & Intel processors ensuring optimal performance for your Minecraft or VPS server.</p>
+                </div>
+                <div class="feature-card p-8 rounded-xl">
+                    <div class="w-16 h-16 bg-blue-500/10 rounded-lg flex items-center justify-center mb-6"><i class="fas fa-shield-alt text-3xl text-blue-400"></i></div>
+                    <h3 class="text-xl font-semibold mb-4">DDoS Protection</h3>
+                    <p class="text-gray-400">Enterprise-grade protection against DDoS attacks, keeping your server safe and online 24/7.</p>
+                </div>
+                <div class="feature-card p-8 rounded-xl">
+                    <div class="w-16 h-16 bg-blue-500/10 rounded-lg flex items-center justify-center mb-6"><i class="fas fa-headset text-3xl text-blue-400"></i></div>
+                    <h3 class="text-xl font-semibold mb-4">24/7 Support</h3>
+                    <p class="text-gray-400">Our dedicated support team is always available to help you with any issues or questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl font-bold mb-6">Ready to Start Your Server?</h2>
+            <p class="text-xl text-gray-400 mb-8">Join hundreds of satisfied users running their servers with FreezeHost
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="https://billing.freezehost.pro" class="btn-primary px-8 py-4 rounded-lg text-lg font-medium inline-block">Open Billing</a>
+                <a href="#plans" class="btn-premium px-8 py-4 rounded-lg text-lg font-medium inline-block">View
+                Plans</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let plansData = null;
+            let currentServiceType = 'minecraft';
+            let currentLocation = null;
+            let currentPlan = null;
+            let selectedLocationContainer = null;
+            let selectedRamContainer = null;
+
+            const serviceMcBtn = document.getElementById('service-mc');
+            const serviceVpsBtn = document.getElementById('service-vps');
+
+            async function loadPlansData() {
+                try {
+                    const response = await fetch('plans.json');
+                    plansData = await response.json();
+
+                    // Initialize listeners
+                    if (serviceMcBtn) serviceMcBtn.addEventListener('click', () => selectService('minecraft'));
+                    if (serviceVpsBtn) serviceVpsBtn.addEventListener('click', () => selectService('vps'));
+
+                    // Initial render - default to Minecraft
+                    selectService('minecraft');
+                } catch (error) {
+                    console.error('Error loading plans data:', error);
+                }
+            }
+
+            function selectService(type) {
+                currentServiceType = type;
+
+                // Update UI buttons
+                if (type === 'minecraft') {
+                    if (serviceMcBtn) serviceMcBtn.classList.add('selected');
+                    if (serviceVpsBtn) serviceVpsBtn.classList.remove('selected');
+                } else {
+                    if (serviceMcBtn) serviceMcBtn.classList.remove('selected');
+                    if (serviceVpsBtn) serviceVpsBtn.classList.add('selected');
+                }
+
+                // Reset selection
+                currentLocation = null;
+                selectedLocationContainer = null;
+                selectedRamContainer = null;
+                hidePlanDetails();
+
+                populateLocationContainers();
+            }
+
+            function populateLocationContainers() {
+                const locationContainers = document.getElementById('location-containers');
+                if (!plansData || !plansData.locations) {
+                    locationContainers.innerHTML = '<div class="text-gray-400">No locations available</div>';
+                    return;
+                }
+
+                // Filter locations by service type
+                const filteredLocations = plansData.locations.filter(loc => loc.type === currentServiceType);
+
+                locationContainers.innerHTML = '';
+
+                if (filteredLocations.length === 0) {
+                    locationContainers.innerHTML = '<div class="text-gray-400">No locations found for this service.</div>';
+                    return;
+                }
+
+                let firstLocation = null;
+
+                filteredLocations.forEach((location, index) => {
+                    const container = document.createElement('div');
+                    container.className = 'selectable-container location-container';
+                    container.setAttribute('data-location', location.code);
+
+                    const getCountryCode = (locationCode) => ({
+                        'netherlands': 'nl',
+                        'singapore': 'sg',
+                        'germany': 'de'
+                    })[locationCode] || locationCode;
+
+                    container.innerHTML = `<div class="flex items-center gap-4"><img src="https://flagcdn.com/w40/${getCountryCode(location.code)}.png" alt="${location.name} flag" class="flag-image-direct flex-shrink-0" style="width: 40px; height: auto;"><div class="text-left"><div class="container-main-text !mb-0">${location.name}</div><div class="container-sub-text">${location.description}</div></div></div>`;
+
+                    container.addEventListener('click', () => selectLocation(location.code, container));
+                    locationContainers.appendChild(container);
+
+                    if (index === 0) {
+                        firstLocation = {
+                            code: location.code,
+                            container: container
+                        };
+                    }
+                });
+
+                // Auto-select first location
+                if (firstLocation) {
+                    selectLocation(firstLocation.code, firstLocation.container);
+                }
+            }
+
+            function populateRamContainers(location) {
+                const ramContainers = document.getElementById('ram-containers');
+                if (!plansData || !plansData.plans[location]) {
+                    ramContainers.innerHTML = '<div class="text-gray-400">No plans available</div>';
+                    return;
+                }
+                const plans = plansData.plans[location];
+                ramContainers.innerHTML = '';
+                let firstPlan = null;
+                plans.forEach((plan, index) => {
+                    const container = document.createElement('div');
+                    container.className = 'selectable-container';
+                    container.setAttribute('data-plan-id', plan.id);
+                    container.innerHTML = `<div class="container-main-text">${plan.specs.ram}</div><div class="container-sub-text">$${plan.price}/month</div>`;
+                    container.addEventListener('click', () => selectRam(plan.id, container));
+                    ramContainers.appendChild(container);
+                    if (index === 0) firstPlan = {
+                        id: plan.id,
+                        container: container
+                    };
+                });
+                if (firstPlan) selectRam(firstPlan.id, firstPlan.container);
+            }
+
+            function selectLocation(locationCode, container) {
+                if (selectedLocationContainer) selectedLocationContainer.classList.remove('selected');
+                if (container) container.classList.add('selected');
+                selectedLocationContainer = container;
+                currentLocation = locationCode;
+                selectedRamContainer = null;
+                hidePlanDetails();
+                populateRamContainers(locationCode);
+            }
+
+            function selectRam(planId, container) {
+                if (selectedRamContainer) selectedRamContainer.classList.remove('selected');
+                container.classList.add('selected');
+                selectedRamContainer = container;
+                displayPlanDetails(planId);
+            }
+
+            function displayPlanDetails(planId) {
+                if (!plansData || !currentLocation) return;
+                const plan = plansData.plans[currentLocation].find(p => p.id === planId);
+                if (!plan) return;
+                currentPlan = plan;
+                const locationInfo = plansData.locations.find(loc => loc.code === currentLocation);
+                document.getElementById('plan-name').textContent = plan.name;
+                document.getElementById('plan-recommended').textContent = plan.recommended;
+                document.getElementById('plan-location').textContent = locationInfo ? locationInfo.name : currentLocation;
+                document.getElementById('plan-cpu').textContent = plan.specs.cpu;
+                document.getElementById('plan-ram').textContent = plan.specs.ram;
+                document.getElementById('plan-storage').textContent = plan.specs.storage;
+                const originalPrice = parseFloat(plan.price);
+                document.getElementById('plan-price-button').innerHTML = `$${originalPrice.toFixed(2)}<span class="text-lg text-gray-400">/mo</span>`;
+                document.getElementById('plan-details').style.display = 'block';
+                const buyBtn = document.getElementById('buy-now-btn');
+                buyBtn.disabled = false;
+                buyBtn.onclick = () => window.location.href = plan.checkoutUrl;
+                document.getElementById('selection-prompt').style.display = 'none';
+            }
+
+            function hidePlanDetails() {
+                document.getElementById('plan-details').style.display = 'none';
+                document.getElementById('selection-prompt').style.display = 'block';
+                currentPlan = null;
+            }
+
+            loadPlansData();
+        });
+    </script>
+
+
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-900 relative z-10" style="background-color: var(--background);">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="/assets/images/fhlogonewnotext.png" alt="FreezeHost Logo" class="h-10 w-10" loading="lazy" decoding="async" width="40" height="40" />
+                        <span class="text-2xl font-bold gradient-text">FreezeHost</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Premium quality free Minecraft server hosting with Intel & AMD processors, 24/7 support, instant setup, and user-friendly control panel.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://free.freezehost.pro" class="text-gray-400 hover:text-white transition-colors">Free Dashboard</a></li>
+                        <li><a href="https://billing.freezehost.pro/" class="text-gray-400 hover:text-white transition-colors">Premium Dashboard</a></li>
+                        <li><a href="https://panel.freezehost.pro" class="text-gray-400 hover:text-white transition-colors">Panel</a></li>
+                        <li><a href="/faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/privacy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="/refund-policy" class="text-gray-400 hover:text-white transition-colors">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+                <p class="text-gray-400">© 2025 FreezeHost. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js" defer></script>
+    <script>
+        // Cookie consent initialization
+        function acceptCookies() {
+            document.getElementById('cookie-banner').style.display = 'none';
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+        if (typeof window !== 'undefined' && localStorage.getItem('cookiesAccepted') === 'true') {
+            const banner = document.getElementById('cookie-banner');
+            if (banner) {
+                banner.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

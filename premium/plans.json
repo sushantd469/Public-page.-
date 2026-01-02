@@ -1,0 +1,293 @@
+{
+  "locations": [
+    {
+      "name": "The Netherlands",
+      "code": "netherlands",
+      "flag": "NL",
+      "description": "Intel Xeon E5-2673 v3",
+      "type": "minecraft"
+    },
+    {
+      "name": "Singapore",
+      "code": "singapore",
+      "flag": "SG",
+      "description": "AMD EPYC 7513",
+      "type": "minecraft"
+    },
+    {
+      "name": "Germany",
+      "code": "germany",
+      "flag": "DE",
+      "description": "Ryzen 9 5900x",
+      "type": "vps"
+    }
+  ],
+  "plans": {
+    "netherlands": [
+      {
+        "id": "mc-2gb-eu",
+        "name": "MC-2GB-EU",
+        "price": 1.50,
+        "currency": "USD",
+        "recommended": "30-40 players with moderate plugins",
+        "specs": {
+          "cpu": "1.25 vCore Intel Xeon E5-2673 v3",
+          "ram": "2GB DDR4",
+          "storage": "5GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/minecraft-nl/mc-2gb-eu/checkout"
+      },
+      {
+        "id": "mc-4gb-eu",
+        "name": "MC-4GB-EU",
+        "price": 3.00,
+        "currency": "USD",
+        "recommended": "30-40 players with moderate plugins",
+        "specs": {
+          "cpu": "1.5 vCore Intel Xeon E5-2673 v3",
+          "ram": "4GB DDR4",
+          "storage": "10GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/minecraft-nl/mc-4gb-eu/checkout"
+      },
+      {
+        "id": "mc-6gb-eu",
+        "name": "MC-6GB-EU",
+        "price": 4.50,
+        "currency": "USD",
+        "recommended": "30-40 players with moderate plugins",
+        "specs": {
+          "cpu": "2.5 vCore Intel Xeon E5-2673 v3",
+          "ram": "6GB DDR4",
+          "storage": "20GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/minecraft-nl/mc-6gb-eu/checkout"
+      },
+      {
+        "id": "mc-8gb-eu",
+        "name": "MC-8GB-EU",
+        "price": 6.00,
+        "currency": "USD",
+        "recommended": "40-50 players with moderate plugins",
+        "specs": {
+          "cpu": "3 vCore Intel Xeon E5-2673 v3",
+          "ram": "8GB DDR4",
+          "storage": "30GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/minecraft-nl/mc-8gb-eu/checkout"
+      },
+      {
+        "id": "mc-12gb-eu",
+        "name": "MC-12GB-EU",
+        "price": 9.00,
+        "currency": "USD",
+        "recommended": "60-70 players with moderate plugins",
+        "specs": {
+          "cpu": "3.5 vCore Intel Xeon E5-2673 v3",
+          "ram": "12GB DDR4",
+          "storage": "50GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/minecraft-nl/mc-12gb-eu/checkout"
+      },
+      {
+        "id": "mc-16gb-eu",
+        "name": "MC-16GB-EU",
+        "price": 12.00,
+        "currency": "USD",
+        "recommended": "80-90 players with heavy plugins",
+        "specs": {
+          "cpu": "4 vCore Intel Xeon E5-2673 v3",
+          "ram": "16GB DDR4",
+          "storage": "100GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/minecraft-nl/mc-16gb-eu/checkout"
+      }
+    ],
+    "singapore": [
+      {
+        "id": "mc-2gb-sg",
+        "name": "MC-2GB-SG",
+        "price": 2.00,
+        "currency": "USD",
+        "recommended": "30-40 players with moderate plugins",
+        "specs": {
+          "cpu": "1.25 vCore AMD EPYC 7513 @ 2.6 GHz",
+          "ram": "2GB DDR4",
+          "storage": "5GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/minecraft-sg/mc-2gb-sg/checkout"
+      },
+      {
+        "id": "mc-4gb-sg",
+        "name": "MC-4GB-SG",
+        "price": 4.00,
+        "currency": "USD",
+        "recommended": "30-40 players with moderate plugins",
+        "specs": {
+          "cpu": "1.5 vCore AMD EPYC 7513 @ 2.6 GHz",
+          "ram": "4GB DDR4",
+          "storage": "10GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/minecraft-sg/mc-4gb-sg/checkout"
+      },
+      {
+        "id": "mc-6gb-sg",
+        "name": "MC-6GB-SG",
+        "price": 6.00,
+        "currency": "USD",
+        "recommended": "30-40 players with moderate plugins",
+        "specs": {
+          "cpu": "2.5 vCore AMD EPYC 7513 @ 2.6 GHz",
+          "ram": "6GB DDR4",
+          "storage": "20GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/minecraft-sg/mc-6gb-sg/checkout"
+      },
+      {
+        "id": "mc-8gb-sg",
+        "name": "MC-8GB-SG",
+        "price": 8.00,
+        "currency": "USD",
+        "recommended": "40-50 players with moderate plugins",
+        "specs": {
+          "cpu": "3 vCore AMD EPYC 7513 @ 2.6 GHz",
+          "ram": "8GB DDR4",
+          "storage": "30GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/minecraft-sg/mc-8gb-sg/checkout"
+      },
+      {
+        "id": "mc-12gb-sg",
+        "name": "MC-12GB-SG",
+        "price": 12.00,
+        "currency": "USD",
+        "recommended": "60-70 players with moderate plugins",
+        "specs": {
+          "cpu": "3.5 vCore AMD EPYC 7513 @ 2.6 GHz",
+          "ram": "12GB DDR4",
+          "storage": "50GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/minecraft-sg/mc-12gb-sg/checkout"
+      },
+      {
+        "id": "mc-16gb-sg",
+        "name": "MC-16GB-SG",
+        "price": 16.00,
+        "currency": "USD",
+        "recommended": "80-90 players with heavy plugins",
+        "specs": {
+          "cpu": "4 vCore AMD EPYC 7513 @ 2.6 GHz",
+          "ram": "16GB DDR4",
+          "storage": "100GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/minecraft-sg/mc-16gb-sg/checkout"
+      }
+    ],
+    "germany": [
+      {
+        "id": "vps-2gb-ger",
+        "name": "VPS-2GB-GER",
+        "price": 3.52,
+        "currency": "USD",
+        "recommended": "Starter VPS",
+        "specs": {
+          "cpu": "1 vCore Ryzen 9 5900x",
+          "ram": "2GB DDR4",
+          "storage": "30GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/vps-germany/vps-2gb-ger/checkout"
+      },
+      {
+        "id": "vps-4gb-ger",
+        "name": "VPS-4GB-GER",
+        "price": 7.04,
+        "currency": "USD",
+        "recommended": "Standard VPS",
+        "specs": {
+          "cpu": "2 vCore Ryzen 9 5900x",
+          "ram": "4GB DDR4",
+          "storage": "50GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/vps-germany/vps-4gb-ger/checkout"
+      },
+      {
+        "id": "vps-6gb-ger",
+        "name": "VPS-6GB-GER",
+        "price": 10.55,
+        "currency": "USD",
+        "recommended": "Medium VPS",
+        "specs": {
+          "cpu": "3 vCore Ryzen 9 5900x",
+          "ram": "6GB DDR4",
+          "storage": "75GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/vps-germany/vps-6gb-ger/checkout"
+      },
+      {
+        "id": "vps-8gb-ger",
+        "name": "VPS-8GB-GER",
+        "price": 14.07,
+        "currency": "USD",
+        "recommended": "High Performance VPS",
+        "specs": {
+          "cpu": "4 vCore Ryzen 9 5900x",
+          "ram": "8GB DDR4",
+          "storage": "100GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/vps-germany/vps-8gb-ger/checkout"
+      },
+      {
+        "id": "vps-12gb-ger",
+        "name": "VPS-12GB-GER",
+        "price": 21.09,
+        "currency": "USD",
+        "recommended": "Power User VPS",
+        "specs": {
+          "cpu": "6 vCore Ryzen 9 5900x",
+          "ram": "12GB DDR4",
+          "storage": "150GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/vps-germany/vps-12gb-ger/checkout"
+      },
+      {
+        "id": "vps-16gb-ger",
+        "name": "VPS-16GB-GER",
+        "price": 28.12,
+        "currency": "USD",
+        "recommended": "Enterprise VPS",
+        "specs": {
+          "cpu": "8 vCore Ryzen 9 5900x",
+          "ram": "16GB DDR4",
+          "storage": "200GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/vps-germany/vps-16gb-ger/checkout"
+      },
+      {
+        "id": "vps-24gb-ger",
+        "name": "VPS-24GB-GER",
+        "price": 42.17,
+        "currency": "USD",
+        "recommended": "Maximum Power VPS",
+        "specs": {
+          "cpu": "10 vCore Ryzen 9 5900x",
+          "ram": "24GB DDR4",
+          "storage": "300GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/vps-germany/vps-24gb-ger/checkout"
+      },
+      {
+        "id": "vps-32gb-ger",
+        "name": "VPS-32GB-GER",
+        "price": 56.23,
+        "currency": "USD",
+        "recommended": "Ultimate VPS",
+        "specs": {
+          "cpu": "12 vCore Ryzen 9 5900x",
+          "ram": "32GB DDR4",
+          "storage": "400GB NVMe"
+        },
+        "checkoutUrl": "https://billing.freezehost.pro/products/vps-germany/vps-32gb-ger/checkout"
+      }
+    ]
+  }
+}
