@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="The page you were looking for could not be found on FreezeHost.">
+    
+    <meta name="robots" content="noindex, follow">
+    
+    <title>404 Not Found - FreezeHost</title>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+
+    <style>
+        /* Ensures consistent box model sizing across browsers (Firefox Fix) */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        @font-face {
+            font-family: 'Space Grotesk';
+            font-style: normal;
+            font-weight: 300 700;
+            font-display: swap;
+            src: url('/assets/fonts/space-grotesk.woff2') format('woff2');
+        }
+    </style>
+    <style id="critical-css-placeholder"></style>
+
+    <!-- CSS Loading Consistency (Async/Preload) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </noscript>
+    <link rel="preload" href="/master.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="/master.css">
+    </noscript>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+    <!-- SEO Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://freezehost.pro/#organization",
+          "name": "FreezeHost",
+          "url": "https://freezehost.pro/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://freezehost.pro/assets/images/fhlogonewnotext.png"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://freezehost.pro/#website",
+          "url": "https://freezehost.pro/",
+          "name": "FreezeHost",
+          "publisher": {
+            "@id": "https://freezehost.pro/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://freezehost.pro/404.html",
+          "name": "404 Not Found - FreezeHost",
+          "description": "The page you were looking for could not be found on FreezeHost.",
+          "isPartOf": {
+            "@id": "https://freezehost.pro/#website"
+          },
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+    </script>
+    
+</head>
+<body class="text-gray-100" style="font-family: 'Space Grotesk', sans-serif;">
+    <!-- Discord Float Button -->
+    <div class="discord-wrapper">
+        <a href="https://discord.gg/q73WgFKQP3" target="_blank" class="discord-float" aria-label="Join our Discord">
+            <i class="fab fa-discord text-3xl"></i>
+        </a>
+        <div class="discord-widget">
+            <div class="discord-widget-header">
+                <h3>Join Community</h3>
+            </div>
+            <p>Connect with fellow server owners, get instant 24/7 support, and stay updated.</p>
+            <div class="discord-widget-status">
+                <span class="status-dot"></span>
+                <span>Support Online</span>
+            </div>
+            <a href="https://discord.gg/q73WgFKQP3" target="_blank" class="discord-widget-btn">Join Server</a>
+        </div>
+    </div>
+
+    
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" style="background-color: #0c0d0f" class="fixed bottom-0 left-0 right-0 border-gray-900 z-50 border-t">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-sm text-center md:text-left text-gray-300">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+                <div class="flex items-center gap-4">
+                    <button onclick="acceptCookies()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 text-sm font-medium">Accept</button>
+                    <a href="/privacy" class="text-blue-400 hover:text-blue-300 text-sm font-medium">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Standard Mobile Menu -->
+    <div class="menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="flex items-center gap-2">
+                <img src="/assets/images/fhlogonewnotext.png" alt="FreezeHost Logo" class="h-7 w-7" loading="lazy" decoding="async" width="28" height="28" />
+                <span class="text-lg font-bold gradient-text">FreezeHost</span>
+            </div>
+            <button class="close-menu w-9 h-9 flex items-center justify-center rounded-lg hover:bg-gray-800 transition-colors" aria-label="Close menu">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <nav class="mobile-menu-content">
+            <div class="space-y-1">
+                <a href="/" class="mobile-menu-link"><i class="fas fa-home text-blue-400"></i><span>Home</span></a>
+                <a href="https://uptime.freezehost.pro/" class="mobile-menu-link"><i class="fas fa-chart-line text-blue-400"></i><span>Uptime</span></a>
+                <a href="/faq" class="mobile-menu-link"><i class="fas fa-question-circle text-blue-400"></i><span>FAQ</span></a>
+            </div>
+            <div class="mt-6">
+                <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 mb-2">Quick Access</h3>
+                <div class="space-y-1">
+                    <a href="https://free.freezehost.pro" class="mobile-menu-card">
+                        <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-tachometer-alt text-blue-400"></i></div>
+                        <div class="flex-1">
+                            <div class="font-medium text-sm">Free Dashboard</div>
+                            <div class="text-xs text-gray-500">Start for free</div>
+                        </div><i class="fas fa-chevron-right text-gray-600 text-sm"></i>
+                    </a>
+                    <a href="https://panel.freezehost.pro" class="mobile-menu-card">
+                        <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-gamepad text-blue-400"></i></div>
+                        <div class="flex-1">
+                            <div class="font-medium text-sm">Control Panel</div>
+                            <div class="text-xs text-gray-500">Manage servers</div>
+                        </div><i class="fas fa-chevron-right text-gray-600 text-sm"></i>
+                    </a>
+                    <a href="/app" class="mobile-menu-card">
+                        <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-android text-blue-400"></i></div>
+                        <div class="flex-1">
+                            <div class="font-medium text-sm">Mobile App</div>
+                            <div class="text-xs text-gray-500">Earn rewards</div>
+                        </div><i class="fas fa-chevron-right text-gray-600 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="/premium/" class="btn-primary w-full px-6 py-3 rounded-lg font-medium text-center flex items-center justify-center gap-2">
+                <i class="fas fa-crown"></i><span>Upgrade to Premium</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Standard Header -->
+    <!-- <header class="fixed w-full z-40 bg-opacity-90 backdrop-blur-lg promo-header-offset"> -->
+    <header class="fixed w-full z-40 bg-opacity-90 backdrop-blur-lg promo-header-offset">
+        <div class="container mx-auto px-3 md:px-4 py-3 md:py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="flex items-center space-x-2 md:space-x-4">
+                    <img src="/assets/images/fhlogonewnotext.png" alt="FreezeHost Logo" class="h-8 w-8 md:h-10 md:w-10" loading="lazy" decoding="async" width="40" height="40"/>
+                    <span class="text-xl md:text-2xl font-bold gradient-text">FreezeHost</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-4">
+                    <div class="flex items-center space-x-2">
+                        <a href="/" class="nav-link-pill"><i class="fas fa-home"></i><span>Home</span></a>
+                        <a href="https://uptime.freezehost.pro/" class="nav-link-pill"><i class="fas fa-chart-line"></i><span>Uptime</span></a>
+                        <a href="/faq" class="nav-link-pill"><i class="fas fa-question-circle"></i><span>FAQ</span></a>
+                    </div>
+                    <div class="h-6 w-px bg-gray-700"></div>
+                    <div class="relative" id="get-started-dropdown-container">
+                        <button id="get-started-dropdown-button" class="get-started-btn">
+                            <span class="relative z-10">Get Started</span>
+                            <i class="fas fa-chevron-down text-xs transition-all duration-300 group-hover:rotate-180 relative z-10"></i>
+                        </button>
+                        <div id="get-started-dropdown-menu" class="dropdown-menu">
+                            <div class="p-3">
+                                <div class="px-3 py-2 mb-2">
+                                    <h3 class="text-sm font-semibold text-white mb-1">Quick Access</h3>
+                                    <p class="text-xs text-gray-500">Choose your dashboard</p>
+                                </div>
+                                <div class="space-y-1">
+                                    <a href="https://free.freezehost.pro" class="dropdown-item">
+                                        <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 rounded-lg flex items-center justify-center"><i class="fas fa-tachometer-alt text-blue-400"></i></div>
+                                        <div class="flex-1">
+                                            <div class="font-medium text-sm">Free Dashboard</div>
+                                            <div class="text-xs text-gray-500">Start for free</div>
+                                        </div><i class="fas fa-arrow-right text-gray-600 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    </a>
+                                    <a href="https://panel.freezehost.pro" class="dropdown-item">
+                                        <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 rounded-lg flex items-center justify-center"><i class="fas fa-gamepad text-blue-400"></i></div>
+                                        <div class="flex-1">
+                                            <div class="font-medium text-sm">Control Panel</div>
+                                            <div class="text-xs text-gray-500">Manage servers</div>
+                                        </div><i class="fas fa-arrow-right text-gray-600 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    </a>
+                                    <a href="/app" class="dropdown-item">
+                                        <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 rounded-lg flex items-center justify-center"><i class="fab fa-android text-blue-400"></i></div>
+                                        <div class="flex-1">
+                                            <div class="font-medium text-sm">Mobile App</div>
+                                            <div class="text-xs text-gray-500">Earn rewards</div>
+                                        </div><i class="fas fa-arrow-right text-gray-600 text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                    </a>
+                                </div>
+                                <div class="px-3 py-2 mt-2 border-t border-blue-500/10">
+                                    <a href="https://billing.freezehost.pro" class="btn-primary w-full px-4 py-2.5 rounded-lg text-sm font-medium flex items-center justify-center gap-2"><i class="fas fa-rocket"></i><span>View Premium Plans</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <button class="md:hidden text-white open-menu p-2" aria-label="Open menu">
+                    <div class="hamburger-icon"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    
+    
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://freezehost.pro/#organization",
+      "name": "FreezeHost",
+      "url": "https://freezehost.pro/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://freezehost.pro/assets/images/fhlogonewnotext.png"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://freezehost.pro/#website",
+      "url": "https://freezehost.pro/",
+      "name": "FreezeHost",
+      "publisher": {
+        "@id": "https://freezehost.pro/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://freezehost.pro/404",
+      "name": "404 Not Found - FreezeHost",
+      "description": "The page you were looking for could not be found on FreezeHost.",
+      "isPartOf": {
+        "@id": "https://freezehost.pro/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+
+
+
+<main class="min-h-screen flex items-center justify-center pt-24 pb-12 relative text-center">
+    <img src="/assets/images/land1.png" alt="Minecraft Landscape" class="absolute inset-0 w-full h-full object-cover object-center md:object-center" />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60"></div>
+    
+    <div class="relative z-10 px-4">
+        <h1 class="text-8xl md:text-9xl font-bold gradient-text mb-4">404</h1>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-white">
+            Oops! Page Not Found
+        </h2>
+        <p class="text-lg text-gray-300 mb-8 max-w-xl mx-auto">
+            The page you're looking for seems to have wandered off into the Minecraft void. Don't worry, let's get you back to creating amazing servers!
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="/" class="btn-primary w-full sm:w-auto px-8 py-3 rounded-lg text-lg font-medium text-center">
+                <i class="fas fa-home mr-2"></i>
+                Return to Homepage
+            </a>
+            <a href="/faq" class="w-full sm:w-auto px-8 py-3 rounded-lg text-lg font-medium border border-blue-500 hover:bg-blue-500/10 transition-colors text-center">
+                <i class="fas fa-question-circle mr-2"></i>
+                Visit FAQ
+            </a>
+        </div>
+    </div>
+</main>
+
+    
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-900 relative z-10" style="background-color: var(--background);">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="/assets/images/fhlogonewnotext.png" alt="FreezeHost Logo" class="h-10 w-10" loading="lazy" decoding="async" width="40" height="40"/>
+                        <span class="text-2xl font-bold gradient-text">FreezeHost</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Premium quality free Minecraft server hosting with Intel & AMD processors, 24/7 support, instant setup, and user-friendly control panel.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://free.freezehost.pro" class="text-gray-400 hover:text-white transition-colors">Free Dashboard</a></li>
+                        <li><a href="https://billing.freezehost.pro/" class="text-gray-400 hover:text-white transition-colors">Premium Dashboard</a></li>
+                        <li><a href="https://panel.freezehost.pro" class="text-gray-400 hover:text-white transition-colors">Panel</a></li>
+                        <li><a href="/faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/privacy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="/refund-policy" class="text-gray-400 hover:text-white transition-colors">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+                <p class="text-gray-400">© 2025 FreezeHost. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js" defer></script>
+    <script>
+        // Cookie consent initialization
+        function acceptCookies() {
+            document.getElementById('cookie-banner').style.display = 'none';
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+        if (typeof window !== 'undefined' && localStorage.getItem('cookiesAccepted') === 'true') {
+            const banner = document.getElementById('cookie-banner');
+            if (banner) {
+                banner.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
